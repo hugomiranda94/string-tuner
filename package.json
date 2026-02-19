@@ -1,0 +1,23 @@
+{
+  "name": "string-tuner",
+  "version": "1.0.0",
+  "description": "Multitool for string manipulation and analysis.",
+  "main": "/dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "strings",
+    "javascript",
+    "string manager"
+  ],
+  "author": "hugomiranda94",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
