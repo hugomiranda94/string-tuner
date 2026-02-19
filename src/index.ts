@@ -1,11 +1,10 @@
-import { capitalize, titleCase, prefix, suffix, truncate } from './functions';
+import { capitalize, trim, prefix, suffix } from './functions';
 
 const st = {
   capitalize,
-  titleCase,
+  trim,
   prefix,
   suffix,
-  truncate,
 };
 
 export default st;
