@@ -1,10 +1,13 @@
-import { capitalize, trim, prefix, suffix } from './functions';
+import { transform, validate, edit, clean, format } from './functions';
 
 const st = {
-  capitalize,
-  trim,
-  prefix,
-  suffix,
+  transform,
+  validate,
+  edit,
+  clean,
+  format,
 };
 
 export default st;
+
+export * from './functions';

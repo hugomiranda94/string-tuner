@@ -1,7 +1,7 @@
 {
   "name": "string-tuner",
-  "version": "1.0.1",
-  "description": "Multitool for string manipulation and analysis.",
+  "version": "1.0.4",
+  "description": "Multitool for string edits and analysis.",
   "main": "/dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
