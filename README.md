@@ -1,19 +1,18 @@
 # String Tuner
-## A multitool package that helps you manage strings fast and easy.
 
-Fine-tune your strings the way you like it, with five dedicated modules for different tasks.<br>
-A tool made by a dev for devs.
+## Fine-tune your strings at your rythm.
 
+An easy-to-use JavaScript tool that helps you manage strings fast.
 
-## Installation
+## Getting Started
+
+### Installation
 
 ```bash
 npm install string-tuner
 ```
 
-## How to Use
-
-### Importing
+### How to use
 
 You can import the entire library or individual modules based on your needs:
 
@@ -64,6 +63,7 @@ validate.url('https://example.com');
 String transformation utilities for converting strings to different formats and cases.
 
 #### `transform.capitalize(str, fullSentence?)`
+
 Capitalizes a string or sentence.
 
 ```javascript
@@ -77,6 +77,7 @@ st.transform.capitalize('the guitar strings vibrate beautifully', false);
 ```
 
 #### `transform.camel(str)`
+
 Converts a string to camelCase.
 
 ```javascript
@@ -86,6 +87,7 @@ st.transform.camel('acoustic guitar solo');
 ```
 
 #### `transform.snake(str)`
+
 Converts a string to snake_case.
 
 ```javascript
@@ -95,6 +97,7 @@ st.transform.snake('Electric Bass Guitar');
 ```
 
 #### `transform.snakeScream(str)`
+
 Converts a string to SCREAMING_SNAKE_CASE.
 
 ```javascript
@@ -104,6 +107,7 @@ st.transform.snakeScream('Electric Bass Guitar');
 ```
 
 #### `transform.kebab(str)`
+
 Converts a string to kebab-case.
 
 ```javascript
@@ -113,6 +117,7 @@ st.transform.kebab('Piano Chord Progression');
 ```
 
 #### `transform.pascal(str)`
+
 Converts a string to PascalCase.
 
 ```javascript
@@ -122,6 +127,7 @@ st.transform.pascal('violin concerto in d major');
 ```
 
 #### `transform.reverse(str)`
+
 Reverses a string.
 
 ```javascript
@@ -131,6 +137,7 @@ st.transform.reverse('melody');
 ```
 
 #### `transform.slugify(str)`
+
 Creates a URL-friendly slug from a string.
 
 ```javascript
@@ -146,6 +153,7 @@ st.transform.slugify('Jazz & Blues: A Musical Journey!');
 Validation utilities for checking string formats.
 
 #### `validate.email(str, customRegex?)`
+
 Validates if a string is a valid email address.
 
 ```javascript
@@ -159,6 +167,7 @@ st.validate.email('not-an-email');
 ```
 
 #### `validate.url(str, customRegex?)`
+
 Validates if a string is a valid URL.
 
 ```javascript
@@ -172,6 +181,7 @@ st.validate.url('not a url');
 ```
 
 #### `validate.phone(str, customRegex?)`
+
 Validates if a string is a valid phone number.
 
 ```javascript
@@ -191,6 +201,7 @@ st.validate.phone('call me maybe');
 String editing utilities for modifying and manipulating strings.
 
 #### `edit.trim(str, maxLength?, trimChar?)`
+
 Trims a string to a maximum length and appends a trim character.
 
 ```javascript
@@ -204,6 +215,7 @@ st.edit.trim('The symphony orchestra performs tonight', 12, '♪');
 ```
 
 #### `edit.repeat(str, count)`
+
 Repeats a string n times.
 
 ```javascript
@@ -213,6 +225,7 @@ st.edit.repeat('♪ ', 5);
 ```
 
 #### `edit.pad(str, length, char?, position?)`
+
 Pads a string to a specified length with a character.
 
 ```javascript
@@ -226,6 +239,7 @@ st.edit.pad('BASS', 10, '*', 'start');
 ```
 
 #### `edit.wrap(str, wrapper)`
+
 Wraps a string with specified characters.
 
 ```javascript
@@ -239,6 +253,7 @@ st.edit.wrap('crescendo', { start: '[', end: ']' });
 ```
 
 #### `edit.unwrap(str, wrapper)`
+
 Removes wrapping characters from a string.
 
 ```javascript
@@ -252,6 +267,7 @@ st.edit.unwrap('[diminuendo]', { start: '[', end: ']' });
 ```
 
 #### `edit.prefix(pf)`
+
 Creates prefix manipulation utilities for a given prefix string.
 
 ```javascript
@@ -266,6 +282,7 @@ sharp.remove('#F');
 ```
 
 #### `edit.suffix(sf)`
+
 Creates suffix manipulation utilities for a given suffix string.
 
 ```javascript
@@ -280,6 +297,7 @@ major.remove('D major');
 ```
 
 #### `edit.initials(str, maxInitials?)`
+
 Extracts initials from a name or string.
 
 ```javascript
@@ -299,6 +317,7 @@ st.edit.initials('Wolfgang Amadeus Mozart', 2);
 String cleaning utilities for removing or normalizing content.
 
 #### `clean.whitespace(str)`
+
 Removes all whitespace from a string.
 
 ```javascript
@@ -308,6 +327,7 @@ st.clean.whitespace('C D E F G A B');
 ```
 
 #### `clean.normalizeWhitespace(str)`
+
 Normalizes whitespace by collapsing multiple spaces to single space and trimming.
 
 ```javascript
@@ -317,6 +337,7 @@ st.clean.normalizeWhitespace('  quarter    note   rest  ');
 ```
 
 #### `clean.html(str)`
+
 Removes HTML tags from a string.
 
 ```javascript
@@ -326,6 +347,7 @@ st.clean.html('<h1>Jazz</h1> <p>is <strong>amazing</strong></p>');
 ```
 
 #### `clean.escapeHtml(str)`
+
 Escapes HTML special characters.
 
 ```javascript
@@ -335,6 +357,7 @@ st.clean.escapeHtml('<chord>C & G</chord>');
 ```
 
 #### `clean.unescapeHtml(str)`
+
 Unescapes HTML entities.
 
 ```javascript
@@ -350,6 +373,7 @@ st.clean.unescapeHtml('&lt;note&gt;A&lt;/note&gt;');
 String formatting utilities for displaying and highlighting strings.
 
 #### `format.mask(str, visibleChars?, maskChar?)`
+
 Masks sensitive data in a string.
 
 ```javascript
@@ -363,6 +387,7 @@ st.format.mask('VIOLIN-ID-9876', 3, '#');
 ```
 
 #### `format.highlight(str, search, wrapper?, caseSensitive?)`
+
 Highlights search terms in a string by wrapping them.
 
 ```javascript
@@ -370,12 +395,16 @@ st.format.highlight('The violin plays a beautiful melody', 'violin');
 // Input: 'The violin plays a beautiful melody'
 // Output: 'The <mark>violin</mark> plays a beautiful melody'
 
-st.format.highlight('Drums and bass create rhythm', 'bass', { start: '[', end: ']' });
+st.format.highlight('Drums and bass create rhythm', 'bass', {
+  start: '[',
+  end: ']',
+});
 // Input: 'Drums and bass create rhythm'
 // Output: 'Drums and [bass] create rhythm'
 ```
 
 #### `format.quote(type?)`
+
 Creates quote manipulation utilities for wrapping/unwrapping strings with quotes.
 
 ```javascript
@@ -391,6 +420,7 @@ sq.remove("'legato'");
 ```
 
 #### `format.bracket(type?)`
+
 Creates bracket manipulation utilities for wrapping/unwrapping strings with brackets.
 
 ```javascript
@@ -407,7 +437,9 @@ square.remove('[pianissimo]');
 
 ---
 
-### `cn` - Conditional class names
+### `other` - Other Utilities
+
+#### `cn` - Conditional class names
 
 Utility for joining class names while filtering out falsy values (booleans, undefined, false, 0, etc.). Handy for building dynamic `className` strings in React.
 
@@ -420,7 +452,6 @@ st.cn('col-12', 0, 'visible');
 // Input: ['col-12', 0, 'visible']
 // Output: 'col-12 visible' // 0 is falsy and removed
 ```
-
 
 ## License
 
