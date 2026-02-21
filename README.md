@@ -1,7 +1,8 @@
 # String Tuner
 ## A multitool package that helps you manage strings fast and easy.
 
-Fine-tune your strings the way you like it. A tool made by a dev for devs.
+Fine-tune your strings the way you like it, with five dedicated modules for different tasks.<br>
+A tool made by a dev for devs.
 
 
 ## Installation
@@ -405,6 +406,21 @@ square.remove('[pianissimo]');
 ```
 
 ---
+
+### `cn` - Conditional class names
+
+Utility for joining class names while filtering out falsy values (booleans, undefined, false, 0, etc.). Handy for building dynamic `className` strings in React.
+
+```javascript
+st.cn('btn', isActive && 'active', undefined, 'primary');
+// Input: ['btn', false | 'active', undefined, 'primary']
+// Output: 'btn active primary'
+
+st.cn('col-12', 0, 'visible');
+// Input: ['col-12', 0, 'visible']
+// Output: 'col-12 visible' // 0 is falsy and removed
+```
+
 
 ## License
 

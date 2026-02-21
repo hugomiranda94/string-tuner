@@ -1,4 +1,4 @@
-import { transform, validate, edit, clean, format } from './functions';
+import { transform, validate, edit, clean, format, cn } from './functions';
 
 const st = {
   transform,
@@ -6,6 +6,7 @@ const st = {
   edit,
   clean,
   format,
+  cn
 };
 
 export default st;

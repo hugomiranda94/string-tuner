@@ -664,3 +664,21 @@ export const format = {
   quote: quote,
   bracket: bracket,
 };
+
+// ============================================
+// OTHER UTILITIES
+// ============================================
+/**
+ * Joins class names into a single space-separated string, filtering out falsy values.
+ * Useful as a lightweight alternative to `classnames` for conditional class names.
+ * @param classes - Variadic list of class values (strings, booleans, numbers, undefined, or false)
+ * @returns A space-separated string of truthy class names
+ * @example
+ * cn('btn', isActive && 'active', undefined, 'primary') // 'btn active primary'
+ * cn('col-12', 0, 'visible') // 'col-12 visible' (0 is falsy and removed)
+ */
+export const cn = (
+  ...classes: (string | boolean | number | undefined | false)[]
+) => {
+  return classes.filter(Boolean).join(' ');
+};
