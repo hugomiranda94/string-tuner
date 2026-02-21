@@ -1,4 +1,4 @@
-# String Tuner
+<img src="st-logo.png" alt="String Tuner logo" width="250" />
 
 ## Fine-tune your strings at your rythm.
 
