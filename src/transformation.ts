@@ -217,7 +217,7 @@ export const kebab = (str: string) => {
  * mask('1234567890') // '******7890'
  * mask('1234567890', 2, '#') // '########90'
  */
-export const mask = (str: string, visibleChars = 4, maskChar = '*') => {
+export const mask = (str: string, visibleChars = 0, maskChar = '*') => {
   if (!str) return '';
   if (str.length <= visibleChars) return str;
   const maskLength = str.length - visibleChars;
