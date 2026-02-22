@@ -1,8 +1,8 @@
 <a href="https://string-tuner.hugomiranda.dev" target="_blank"><img src="st-logo.png" alt="String Tuner logo" width="250" /></a>
 
-## Fine-tune your strings at your rythm.
+## Fine-tune your strings at your rhythm.
 
-An easy-to-use JavaScript tool that helps you manage strings fast.
+An easy-to-use JavaScript tool to manage strings fast.
 
 ## Getting Started
 
