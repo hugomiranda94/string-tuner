@@ -1,7 +1,7 @@
 {
   "name": "string-tuner",
-  "version": "3.0.3",
-  "description": "Multitool for string edits and analysis.",
+  "version": "3.0.4",
+  "description": "Fine-tune your strings at your rhythm. An easy-to-use JavaScript library with functions to transform and validate strings.",
   "main": "/dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,7 +11,9 @@
   "keywords": [
     "strings",
     "javascript",
-    "string manager"
+    "string manager",
+    "transformation",
+    "validation"
   ],
   "author": "hugomiranda94",
   "license": "MIT",
